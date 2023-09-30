@@ -1,45 +1,25 @@
-import { Button } from "@mui/material";
+import { Button, createTheme } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-export const CompButtons = ({ props }) => {
-  return (
-    <Button
-      onClick={props.onClick}
-      startIcon={props.startIcon}
-      endIcon={props.endIcon}
-      sx={{
-        display: "flex",
-        justifyContent: "space-around",
-        textTransform: "none",
-        borderRadius: 10,
-        width: "10rem",
-        p: 0,
-        mr: 2,
-      }}
-    />
-  );
-};
-export const CompGreenButton = (props) => {
-  return (
-    <Button
-      onClick={props.onClick}
-      startIcon={props.startIcon}
-      endIcon={props.endIcon}
-      sx={{
-        display: "flex",
-        justifyContent: "space-around",
-        textTransform: "none",
-        borderRadius: 10,
-        width: "10rem",
-        p: 0,
-        color: "white",
-        bgcolor: "#29CC8B",
-        "&:hover": { bgcolor: "#29CC8B" },
-        mr: 2,
-      }}
-    />
-  );
-};
+
+export const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          display: "flex",
+          justifyContent: "space-around",
+          textTransform: "none",
+          borderRadius: 15,
+          width: "10rem",
+          padding: 0,
+          marginRight: 10,
+          marginBottom: 15,
+        },
+      },
+    },
+  },
+});
 export const SortGreenButton = (props) => {
   return (
     <Button

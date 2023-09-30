@@ -10,7 +10,9 @@ export const GrayTheme = createTheme({
   },
 });
 
-
+export const StyledAppBAr = styled("div")(() => ({
+  backgroundColor: "#29CC8B",
+}));
 export const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: 10,
@@ -47,3 +49,5 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
+

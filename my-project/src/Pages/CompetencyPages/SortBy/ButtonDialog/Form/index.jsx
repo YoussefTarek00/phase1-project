@@ -3,35 +3,19 @@ import {
   Button,
   Checkbox,
   FormControlLabel,
- 
   TextField,
 } from "@mui/material";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addArray } from "../../../../../Services/data/dataSlice";
-
 
 const Form = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [isActive, setIsActive] = useState(true);
 
-
- 
-  const dispatch = useDispatch();
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    
-
-    dispatch(addArray({name,description}));
-
-    setName("");
-    setDescription("");
   };
- 
+
   return (
     <Box
       component="form"
@@ -39,8 +23,6 @@ const Form = () => {
         "& .MuiTextField-root": { m: 1, width: "25ch" },
       }}
       autoComplete="off"
-      noValidate
-
       onSubmit={handleSubmit}
     >
       <TextField
@@ -54,7 +36,6 @@ const Form = () => {
         color="success"
         focused
         onChange={(e) => setName(e.target.value)}
-        sx={{ marginBottom: 10, "&:hover": { border: "none" } }}
       />
       <TextField
         id="description"
@@ -66,12 +47,12 @@ const Form = () => {
         color="success"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-        sx={{ marginBottom: 10 }}
       />
       <FormControlLabel
         control={<Checkbox disabled={!isActive} />}
         label="Active"
         name="isActive"
+        onChange={(e) => setIsActive(e.target.value)}
       />
 
       <Button

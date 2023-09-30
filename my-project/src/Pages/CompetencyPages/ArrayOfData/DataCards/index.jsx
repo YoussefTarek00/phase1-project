@@ -1,18 +1,14 @@
 import {
   Avatar,
   Box,
-  Button,
   Card,
-  CardActions,
   CardContent,
   CardHeader,
-  Icon,
   IconButton,
   Typography,
 } from "@mui/material";
 import HeadIcon from "../../../../assets/Icons/communicationSkillGren.svg";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import { useState } from "react";
 
 const DataCards = ({ data }) => {
   const style = {
@@ -68,7 +64,9 @@ const DataCards = ({ data }) => {
             </>
           }
           action={
-            <IconButton sx={{bgcolor:"#E2E8EE",p:0,mr:2, mt:1,borderRadius:2}}>
+            <IconButton
+              sx={{ bgcolor: "#E2E8EE", p: 0, mr: 2, mt: 1, borderRadius: 2 }}
+            >
               <MoreHorizIcon />
             </IconButton>
           }

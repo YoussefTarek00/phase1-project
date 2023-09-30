@@ -59,12 +59,8 @@ const initialState = [
 const dataSlice = createSlice({
   name: "data",
   initialState,
-  reducers: {
-    addArray: (state,action) => {
-      const newArray = action.payload;
-      return [...state,newArray]
-    }
-}});
+  reducers: {},
+});
 
 export const selectFilteredNames = (state, filter) => {
   switch (filter) {
@@ -79,5 +75,4 @@ export const selectFilteredNames = (state, filter) => {
   }
 };
 
-export const {addArray} = dataSlice.actions
 export default dataSlice.reducer;
