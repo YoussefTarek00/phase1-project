@@ -50,4 +50,14 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-
+export const TextFieldtheme = createTheme({
+  components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "white", opacity: 0.5, 
+        },
+      },
+    },
+  },
+});

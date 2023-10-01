@@ -13,7 +13,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 const DataCards = ({ data }) => {
   const style = {
     borderLeft: `10px solid ${
-      data.competency_type.name === "Core Competency" ? "#29CC8B" : "blue"
+      data.competency_type.name === "Core Competency" ? "#29CC8B" : "#6794FF"
     }  `,
   };
 
