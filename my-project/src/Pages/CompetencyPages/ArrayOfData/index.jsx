@@ -3,9 +3,9 @@ import { Grid } from "@mui/material";
 import DataCards from "./DataCards";
 import { useState } from "react";
 import { LoadMoreButton } from "../../../Components/style/Buttons";
-import { selectFilteredNames } from "../../../Services/data/dataSlice";
 
 import { useMemo } from "react";
+import { selectFilteredNames } from "../../../Services/data/ThunkData";
 
 const ArrayOfData = () => {
   const [show, setShow] = useState(2);

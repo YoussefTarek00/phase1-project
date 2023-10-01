@@ -1,11 +1,4 @@
-import {
-  Avatar,
-  Box,
-  Container,
-  Grid,
-  Icon,
-  Typography,
-} from "@mui/material";
+import { Avatar, Box, Container, Grid, Icon, Typography } from "@mui/material";
 import HeadIcon from "../../assets/Icons/communicationskillfilled.svg";
 import SearchIcon from "../../assets/Icons/ic-search.svg";
 import SortBy from "./SortBy";
@@ -15,13 +8,10 @@ import {
   StyledInputBase,
 } from "../style/AccessThemes";
 import ArrayOfData from "../../Pages/CompetencyPages/ArrayOfData";
-import { useNavigate } from "react-router-dom";
 import Comp3Buttons from "../../Pages/CompetencyPages/Comp3Buttons";
 import StyleDivider from "../style/Divider";
 
 const Competency = () => {
-  const navigate = useNavigate();
-
   return (
     <Container>
       <Box sx={{ display: "flex", flexWrap: "wrap", mt: 5 }}>
@@ -56,7 +46,7 @@ const Competency = () => {
           </Search>
         </Box>
       </Box>
-      <StyleDivider/>
+      <StyleDivider />
       <Grid container spacing={5}>
         <Grid item xs={12} md={6} lg={6}>
           <Comp3Buttons />

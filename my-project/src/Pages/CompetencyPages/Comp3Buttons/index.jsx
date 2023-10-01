@@ -28,9 +28,12 @@ const Comp3Buttons = () => {
 
   const handelAllClick = () => {
     navigate("?filter=all");
+    console.log('handelAllClick');
   };
   const handelActiveClick = () => {
     navigate("?filter=active");
+
+    console.log("handelActiveClick");
   };
   const handelDisabledClick = () => {
     navigate("?filter=disabled");
