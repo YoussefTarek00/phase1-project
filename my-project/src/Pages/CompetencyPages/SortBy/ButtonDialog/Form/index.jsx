@@ -34,7 +34,6 @@ const Form = () => {
         value={name}
         helperText=" Enter your name"
         color="success"
-        focused
         onChange={(e) => setName(e.target.value)}
       />
       <TextField
@@ -60,8 +59,8 @@ const Form = () => {
         sx={{
           marginTop: 10,
           padding: "5px 10px",
-          backgroundColor: "green",
-          "&:hover": { bgcolor: "green" },
+          backgroundColor: "#29CC8B",
+          "&:hover": { bgcolor: "#29CC8B" },
           color: "#fff",
         }}
       >
