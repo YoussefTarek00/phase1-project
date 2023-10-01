@@ -32,7 +32,6 @@ const Form = () => {
           id="name"
           label="Name"
           name="name"
-          multiline
           required
           value={name}
           helperText=" Enter your name"

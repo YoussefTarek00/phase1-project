@@ -55,7 +55,12 @@ export const TextFieldtheme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          backgroundColor: "white", opacity: 0.5, 
+          backgroundColor: "white",
+          opacity: 0.5,
+          "& .MuiInputBase-formControl:hover .MuiOutlinedInput-notchedOutline ":
+            {
+              border: "1px solid #E1E1E1  !important ",
+            },
         },
       },
     },
